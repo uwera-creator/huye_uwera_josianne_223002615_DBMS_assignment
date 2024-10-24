@@ -1,0 +1,415 @@
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 99
+Server version: 8.3.0 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2024, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> use ruhande;
+Database changed
+mysql> create table ngoma(ID INT(16),F_NAME varchar(255),L_NAME varchar(255),GENDER char(1),PROVINCE varchar(255),DISTRICT varchar(255),SECTOR varchar(255), CELL varchar(255),EMAIL_ADDRESS varchar(255),TEL_NUMBER INT(10));
+Query OK, 0 rows affected, 2 warnings (0.02 sec)
+
+mysql> insert into ngoma values(1200470068404721,'UWERA','Josianne','F','South','Huye','Ngoma','Ruhande','uwerajox@gmail.com',0788889629);
+Query OK, 1 row affected, 1 warning (0.01 sec)
+
+mysql> select * from ngoma;
++------------+--------+----------+--------+----------+----------+--------+---------+--------------------+------------+
+| ID         | F_NAME | L_NAME   | GENDER | PROVINCE | DISTRICT | SECTOR | CELL    | EMAIL_ADDRESS      | TEL_NUMBER |
++------------+--------+----------+--------+----------+----------+--------+---------+--------------------+------------+
+| 2147483647 | UWERA  | Josianne | F      | South    | Huye     | Ngoma  | Ruhande | uwerajox@gmail.com |  788889629 |
++------------+--------+----------+--------+----------+----------+--------+---------+--------------------+------------+
+1 row in set (0.00 sec)
+
+mysql> insert into ngoma values(120045678589487,'ARTHUR','Darren','M','South','Huye','Tumba','Mukinanyana','arthurdarren@gmail.com',0798088152);
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> insert into ngoma values(12076478784747,'niyonshuti','yemima','F','South','Huye','Mbazi','Rango','niyonshutiyemima@gmail.com',0790119066);
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> insert into ngoma values(1203456784747,'niyigena','Djamilla','F','South','Huye','Simbi','Gako','niyigenadjamilla@gmail.com',0787406888);
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> insert into ngoma values(1203786544747,'neza','Shyaka','F','South','Huye','Rusatira','Buhimba','nezashyaka@gmail.com',0791411654);
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> insert into ngoma values(1204457623227,'Ricky','Talent','M','South','Huye','Kinazi','Gakoni','rickytalentgmail.com',0785008810);
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> insert into ngoma values(1206745445227,'Uwayisenga','Isaac','M','South','Huye','Save','Kinkanga','isaac02@gmail.com',0783693333);
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> select * from ngoma;
++------------+------------+----------+--------+----------+----------+----------+-------------+----------------------------+------------+
+| ID         | F_NAME     | L_NAME   | GENDER | PROVINCE | DISTRICT | SECTOR   | CELL        | EMAIL_ADDRESS              | TEL_NUMBER |
++------------+------------+----------+--------+----------+----------+----------+-------------+----------------------------+------------+
+| 2147483647 | UWERA      | Josianne | F      | South    | Huye     | Ngoma    | Ruhande     | uwerajox@gmail.com         |  788889629 |
+| 2147483647 | ARTHUR     | Darren   | M      | South    | Huye     | Tumba    | Mukinanyana | arthurdarren@gmail.com     |  798088152 |
+| 2147483647 | niyonshuti | yemima   | F      | South    | Huye     | Mbazi    | Rango       | niyonshutiyemima@gmail.com |  790119066 |
+| 2147483647 | niyigena   | Djamilla | F      | South    | Huye     | Simbi    | Gako        | niyigenadjamilla@gmail.com |  787406888 |
+| 2147483647 | neza       | Shyaka   | F      | South    | Huye     | Rusatira | Buhimba     | nezashyaka@gmail.com       |  791411654 |
+| 2147483647 | Ricky      | Talent   | M      | South    | Huye     | Kinazi   | Gakoni      | rickytalentgmail.com       |  785008810 |
+| 2147483647 | Uwayisenga | Isaac    | M      | South    | Huye     | Save     | Kinkanga    | isaac02@gmail.com          |  783693333 |
++------------+------------+----------+--------+----------+----------+----------+-------------+----------------------------+------------+
+7 rows in set (0.00 sec)
+
+mysql> insert into ngoma values(12234654347,'Izere','philos','F','South','Huye','Mukura','Shyira','philos@gmail.com',0785019483);
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> insert into ngoma values(122345673247,'Kwigira','germain','M','South','Huye','Rusatira','Rugarama','germain@gmail.com',0788944251);
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> insert into ngoma values(1223434567432,'Atete','olga','F','South','Huye','Busasamana','Bweramana','olgaatete@gmail.com',0785087883);
+Query OK, 1 row affected, 1 warning (0.02 sec)
+
+mysql> select * from ngoma;
++------------+------------+----------+--------+----------+----------+------------+-------------+----------------------------+------------+
+| ID         | F_NAME     | L_NAME   | GENDER | PROVINCE | DISTRICT | SECTOR     | CELL        | EMAIL_ADDRESS              | TEL_NUMBER |
++------------+------------+----------+--------+----------+----------+------------+-------------+----------------------------+------------+
+| 2147483647 | UWERA      | Josianne | F      | South    | Huye     | Ngoma      | Ruhande     | uwerajox@gmail.com         |  788889629 |
+| 2147483647 | ARTHUR     | Darren   | M      | South    | Huye     | Tumba      | Mukinanyana | arthurdarren@gmail.com     |  798088152 |
+| 2147483647 | niyonshuti | yemima   | F      | South    | Huye     | Mbazi      | Rango       | niyonshutiyemima@gmail.com |  790119066 |
+| 2147483647 | niyigena   | Djamilla | F      | South    | Huye     | Simbi      | Gako        | niyigenadjamilla@gmail.com |  787406888 |
+| 2147483647 | neza       | Shyaka   | F      | South    | Huye     | Rusatira   | Buhimba     | nezashyaka@gmail.com       |  791411654 |
+| 2147483647 | Ricky      | Talent   | M      | South    | Huye     | Kinazi     | Gakoni      | rickytalentgmail.com       |  785008810 |
+| 2147483647 | Uwayisenga | Isaac    | M      | South    | Huye     | Save       | Kinkanga    | isaac02@gmail.com          |  783693333 |
+| 2147483647 | Izere      | philos   | F      | South    | Huye     | Mukura     | Shyira      | philos@gmail.com           |  785019483 |
+| 2147483647 | Kwigira    | germain  | M      | South    | Huye     | Rusatira   | Rugarama    | germain@gmail.com          |  788944251 |
+| 2147483647 | Atete      | olga     | F      | South    | Huye     | Busasamana | Bweramana   | olgaatete@gmail.com        |  785087883 |
++------------+------------+----------+--------+----------+----------+------------+-------------+----------------------------+------------+
+10 rows in set (0.00 sec)
+
+mysql> update ngoma set province='west' where ID=2147483647;
+Query OK, 10 rows affected (0.00 sec)
+Rows matched: 10  Changed: 10  Warnings: 0
+
+mysql> select * from ngoma;
++------------+------------+----------+--------+----------+----------+------------+-------------+----------------------------+------------+
+| ID         | F_NAME     | L_NAME   | GENDER | PROVINCE | DISTRICT | SECTOR     | CELL        | EMAIL_ADDRESS              | TEL_NUMBER |
++------------+------------+----------+--------+----------+----------+------------+-------------+----------------------------+------------+
+| 2147483647 | UWERA      | Josianne | F      | west     | Huye     | Ngoma      | Ruhande     | uwerajox@gmail.com         |  788889629 |
+| 2147483647 | ARTHUR     | Darren   | M      | west     | Huye     | Tumba      | Mukinanyana | arthurdarren@gmail.com     |  798088152 |
+| 2147483647 | niyonshuti | yemima   | F      | west     | Huye     | Mbazi      | Rango       | niyonshutiyemima@gmail.com |  790119066 |
+| 2147483647 | niyigena   | Djamilla | F      | west     | Huye     | Simbi      | Gako        | niyigenadjamilla@gmail.com |  787406888 |
+| 2147483647 | neza       | Shyaka   | F      | west     | Huye     | Rusatira   | Buhimba     | nezashyaka@gmail.com       |  791411654 |
+| 2147483647 | Ricky      | Talent   | M      | west     | Huye     | Kinazi     | Gakoni      | rickytalentgmail.com       |  785008810 |
+| 2147483647 | Uwayisenga | Isaac    | M      | west     | Huye     | Save       | Kinkanga    | isaac02@gmail.com          |  783693333 |
+| 2147483647 | Izere      | philos   | F      | west     | Huye     | Mukura     | Shyira      | philos@gmail.com           |  785019483 |
+| 2147483647 | Kwigira    | germain  | M      | west     | Huye     | Rusatira   | Rugarama    | germain@gmail.com          |  788944251 |
+| 2147483647 | Atete      | olga     | F      | west     | Huye     | Busasamana | Bweramana   | olgaatete@gmail.com        |  785087883 |
++------------+------------+----------+--------+----------+----------+------------+-------------+----------------------------+------------+
+10 rows in set (0.00 sec)
+
+mysql> update ngoma set province='south' where ID=2147483647;
+Query OK, 10 rows affected (0.00 sec)
+Rows matched: 10  Changed: 10  Warnings: 0
+
+mysql> update ngoma set province='south' where sector='rusatira';
+Query OK, 0 rows affected (0.00 sec)
+Rows matched: 2  Changed: 0  Warnings: 0
+
+mysql> select * from ngoma;
++------------+------------+----------+--------+----------+----------+------------+-------------+----------------------------+------------+
+| ID         | F_NAME     | L_NAME   | GENDER | PROVINCE | DISTRICT | SECTOR     | CELL        | EMAIL_ADDRESS              | TEL_NUMBER |
++------------+------------+----------+--------+----------+----------+------------+-------------+----------------------------+------------+
+| 2147483647 | UWERA      | Josianne | F      | south    | Huye     | Ngoma      | Ruhande     | uwerajox@gmail.com         |  788889629 |
+| 2147483647 | ARTHUR     | Darren   | M      | south    | Huye     | Tumba      | Mukinanyana | arthurdarren@gmail.com     |  798088152 |
+| 2147483647 | niyonshuti | yemima   | F      | south    | Huye     | Mbazi      | Rango       | niyonshutiyemima@gmail.com |  790119066 |
+| 2147483647 | niyigena   | Djamilla | F      | south    | Huye     | Simbi      | Gako        | niyigenadjamilla@gmail.com |  787406888 |
+| 2147483647 | neza       | Shyaka   | F      | south    | Huye     | Rusatira   | Buhimba     | nezashyaka@gmail.com       |  791411654 |
+| 2147483647 | Ricky      | Talent   | M      | south    | Huye     | Kinazi     | Gakoni      | rickytalentgmail.com       |  785008810 |
+| 2147483647 | Uwayisenga | Isaac    | M      | south    | Huye     | Save       | Kinkanga    | isaac02@gmail.com          |  783693333 |
+| 2147483647 | Izere      | philos   | F      | south    | Huye     | Mukura     | Shyira      | philos@gmail.com           |  785019483 |
+| 2147483647 | Kwigira    | germain  | M      | south    | Huye     | Rusatira   | Rugarama    | germain@gmail.com          |  788944251 |
+| 2147483647 | Atete      | olga     | F      | south    | Huye     | Busasamana | Bweramana   | olgaatete@gmail.com        |  785087883 |
++------------+------------+----------+--------+----------+----------+------------+-------------+----------------------------+------------+
+10 rows in set (0.00 sec)
+
+mysql> update ngoma set province='west' where sector='rusatira';
+Query OK, 2 rows affected (0.00 sec)
+Rows matched: 2  Changed: 2  Warnings: 0
+
+mysql> select * from ngoma;
++------------+------------+----------+--------+----------+----------+------------+-------------+----------------------------+------------+
+| ID         | F_NAME     | L_NAME   | GENDER | PROVINCE | DISTRICT | SECTOR     | CELL        | EMAIL_ADDRESS              | TEL_NUMBER |
++------------+------------+----------+--------+----------+----------+------------+-------------+----------------------------+------------+
+| 2147483647 | UWERA      | Josianne | F      | south    | Huye     | Ngoma      | Ruhande     | uwerajox@gmail.com         |  788889629 |
+| 2147483647 | ARTHUR     | Darren   | M      | south    | Huye     | Tumba      | Mukinanyana | arthurdarren@gmail.com     |  798088152 |
+| 2147483647 | niyonshuti | yemima   | F      | south    | Huye     | Mbazi      | Rango       | niyonshutiyemima@gmail.com |  790119066 |
+| 2147483647 | niyigena   | Djamilla | F      | south    | Huye     | Simbi      | Gako        | niyigenadjamilla@gmail.com |  787406888 |
+| 2147483647 | neza       | Shyaka   | F      | west     | Huye     | Rusatira   | Buhimba     | nezashyaka@gmail.com       |  791411654 |
+| 2147483647 | Ricky      | Talent   | M      | south    | Huye     | Kinazi     | Gakoni      | rickytalentgmail.com       |  785008810 |
+| 2147483647 | Uwayisenga | Isaac    | M      | south    | Huye     | Save       | Kinkanga    | isaac02@gmail.com          |  783693333 |
+| 2147483647 | Izere      | philos   | F      | south    | Huye     | Mukura     | Shyira      | philos@gmail.com           |  785019483 |
+| 2147483647 | Kwigira    | germain  | M      | west     | Huye     | Rusatira   | Rugarama    | germain@gmail.com          |  788944251 |
+| 2147483647 | Atete      | olga     | F      | south    | Huye     | Busasamana | Bweramana   | olgaatete@gmail.com        |  785087883 |
++------------+------------+----------+--------+----------+----------+------------+-------------+----------------------------+------------+
+10 rows in set (0.00 sec)
+
+mysql> alter table ngoma add address varchar(255);
+Query OK, 10 rows affected (0.05 sec)
+Records: 10  Duplicates: 0  Warnings: 0
+
+mysql> select * from ngoma;
++------------+------------+----------+--------+----------+----------+------------+-------------+----------------------------+------------+---------+
+| ID         | F_NAME     | L_NAME   | GENDER | PROVINCE | DISTRICT | SECTOR     | CELL        | EMAIL_ADDRESS              | TEL_NUMBER | address |
++------------+------------+----------+--------+----------+----------+------------+-------------+----------------------------+------------+---------+
+| 2147483647 | UWERA      | Josianne | F      | south    | Huye     | Ngoma      | Ruhande     | uwerajox@gmail.com         |  788889629 | NULL    |
+| 2147483647 | ARTHUR     | Darren   | M      | south    | Huye     | Tumba      | Mukinanyana | arthurdarren@gmail.com     |  798088152 | NULL    |
+| 2147483647 | niyonshuti | yemima   | F      | south    | Huye     | Mbazi      | Rango       | niyonshutiyemima@gmail.com |  790119066 | NULL    |
+| 2147483647 | niyigena   | Djamilla | F      | south    | Huye     | Simbi      | Gako        | niyigenadjamilla@gmail.com |  787406888 | NULL    |
+| 2147483647 | neza       | Shyaka   | F      | west     | Huye     | Rusatira   | Buhimba     | nezashyaka@gmail.com       |  791411654 | NULL    |
+| 2147483647 | Ricky      | Talent   | M      | south    | Huye     | Kinazi     | Gakoni      | rickytalentgmail.com       |  785008810 | NULL    |
+| 2147483647 | Uwayisenga | Isaac    | M      | south    | Huye     | Save       | Kinkanga    | isaac02@gmail.com          |  783693333 | NULL    |
+| 2147483647 | Izere      | philos   | F      | south    | Huye     | Mukura     | Shyira      | philos@gmail.com           |  785019483 | NULL    |
+| 2147483647 | Kwigira    | germain  | M      | west     | Huye     | Rusatira   | Rugarama    | germain@gmail.com          |  788944251 | NULL    |
+| 2147483647 | Atete      | olga     | F      | south    | Huye     | Busasamana | Bweramana   | olgaatete@gmail.com        |  785087883 | NULL    |
++------------+------------+----------+--------+----------+----------+------------+-------------+----------------------------+------------+---------+
+10 rows in set (0.00 sec)
+
+mysql> update ngoma set address='huye_rwanda' where id=2147483647;
+Query OK, 10 rows affected (0.00 sec)
+Rows matched: 10  Changed: 10  Warnings: 0
+
+mysql> select * from ngoma;
++------------+------------+----------+--------+----------+----------+------------+-------------+----------------------------+------------+-------------+
+| ID         | F_NAME     | L_NAME   | GENDER | PROVINCE | DISTRICT | SECTOR     | CELL        | EMAIL_ADDRESS              | TEL_NUMBER | address     |
++------------+------------+----------+--------+----------+----------+------------+-------------+----------------------------+------------+-------------+
+| 2147483647 | UWERA      | Josianne | F      | south    | Huye     | Ngoma      | Ruhande     | uwerajox@gmail.com         |  788889629 | huye_rwanda |
+| 2147483647 | ARTHUR     | Darren   | M      | south    | Huye     | Tumba      | Mukinanyana | arthurdarren@gmail.com     |  798088152 | huye_rwanda |
+| 2147483647 | niyonshuti | yemima   | F      | south    | Huye     | Mbazi      | Rango       | niyonshutiyemima@gmail.com |  790119066 | huye_rwanda |
+| 2147483647 | niyigena   | Djamilla | F      | south    | Huye     | Simbi      | Gako        | niyigenadjamilla@gmail.com |  787406888 | huye_rwanda |
+| 2147483647 | neza       | Shyaka   | F      | west     | Huye     | Rusatira   | Buhimba     | nezashyaka@gmail.com       |  791411654 | huye_rwanda |
+| 2147483647 | Ricky      | Talent   | M      | south    | Huye     | Kinazi     | Gakoni      | rickytalentgmail.com       |  785008810 | huye_rwanda |
+| 2147483647 | Uwayisenga | Isaac    | M      | south    | Huye     | Save       | Kinkanga    | isaac02@gmail.com          |  783693333 | huye_rwanda |
+| 2147483647 | Izere      | philos   | F      | south    | Huye     | Mukura     | Shyira      | philos@gmail.com           |  785019483 | huye_rwanda |
+| 2147483647 | Kwigira    | germain  | M      | west     | Huye     | Rusatira   | Rugarama    | germain@gmail.com          |  788944251 | huye_rwanda |
+| 2147483647 | Atete      | olga     | F      | south    | Huye     | Busasamana | Bweramana   | olgaatete@gmail.com        |  785087883 | huye_rwanda |
++------------+------------+----------+--------+----------+----------+------------+-------------+----------------------------+------------+-------------+
+10 rows in set (0.00 sec)
+
+mysql> alater table ngoma drop email_address;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'alater table ngoma drop email_address' at line 1
+mysql> alter table ngoma drop email_address;
+Query OK, 10 rows affected (0.04 sec)
+Records: 10  Duplicates: 0  Warnings: 0
+
+mysql> select * from ngoma;
++------------+------------+----------+--------+----------+----------+------------+-------------+------------+-------------+
+| ID         | F_NAME     | L_NAME   | GENDER | PROVINCE | DISTRICT | SECTOR     | CELL        | TEL_NUMBER | address     |
++------------+------------+----------+--------+----------+----------+------------+-------------+------------+-------------+
+| 2147483647 | UWERA      | Josianne | F      | south    | Huye     | Ngoma      | Ruhande     |  788889629 | huye_rwanda |
+| 2147483647 | ARTHUR     | Darren   | M      | south    | Huye     | Tumba      | Mukinanyana |  798088152 | huye_rwanda |
+| 2147483647 | niyonshuti | yemima   | F      | south    | Huye     | Mbazi      | Rango       |  790119066 | huye_rwanda |
+| 2147483647 | niyigena   | Djamilla | F      | south    | Huye     | Simbi      | Gako        |  787406888 | huye_rwanda |
+| 2147483647 | neza       | Shyaka   | F      | west     | Huye     | Rusatira   | Buhimba     |  791411654 | huye_rwanda |
+| 2147483647 | Ricky      | Talent   | M      | south    | Huye     | Kinazi     | Gakoni      |  785008810 | huye_rwanda |
+| 2147483647 | Uwayisenga | Isaac    | M      | south    | Huye     | Save       | Kinkanga    |  783693333 | huye_rwanda |
+| 2147483647 | Izere      | philos   | F      | south    | Huye     | Mukura     | Shyira      |  785019483 | huye_rwanda |
+| 2147483647 | Kwigira    | germain  | M      | west     | Huye     | Rusatira   | Rugarama    |  788944251 | huye_rwanda |
+| 2147483647 | Atete      | olga     | F      | south    | Huye     | Busasamana | Bweramana   |  785087883 | huye_rwanda |
++------------+------------+----------+--------+----------+----------+------------+-------------+------------+-------------+
+10 rows in set (0.00 sec)
+
+mysql> select f_name,l_name,tel_number,address from ngoma;
++------------+----------+------------+-------------+
+| f_name     | l_name   | tel_number | address     |
++------------+----------+------------+-------------+
+| UWERA      | Josianne |  788889629 | huye_rwanda |
+| ARTHUR     | Darren   |  798088152 | huye_rwanda |
+| niyonshuti | yemima   |  790119066 | huye_rwanda |
+| niyigena   | Djamilla |  787406888 | huye_rwanda |
+| neza       | Shyaka   |  791411654 | huye_rwanda |
+| Ricky      | Talent   |  785008810 | huye_rwanda |
+| Uwayisenga | Isaac    |  783693333 | huye_rwanda |
+| Izere      | philos   |  785019483 | huye_rwanda |
+| Kwigira    | germain  |  788944251 | huye_rwanda |
+| Atete      | olga     |  785087883 | huye_rwanda |
++------------+----------+------------+-------------+
+10 rows in set (0.00 sec)
+
+mysql> select * from ngoma where  gender ='F' or province='south';
++------------+------------+----------+--------+----------+----------+------------+-------------+------------+-------------+
+| ID         | F_NAME     | L_NAME   | GENDER | PROVINCE | DISTRICT | SECTOR     | CELL        | TEL_NUMBER | address     |
++------------+------------+----------+--------+----------+----------+------------+-------------+------------+-------------+
+| 2147483647 | UWERA      | Josianne | F      | south    | Huye     | Ngoma      | Ruhande     |  788889629 | huye_rwanda |
+| 2147483647 | ARTHUR     | Darren   | M      | south    | Huye     | Tumba      | Mukinanyana |  798088152 | huye_rwanda |
+| 2147483647 | niyonshuti | yemima   | F      | south    | Huye     | Mbazi      | Rango       |  790119066 | huye_rwanda |
+| 2147483647 | niyigena   | Djamilla | F      | south    | Huye     | Simbi      | Gako        |  787406888 | huye_rwanda |
+| 2147483647 | neza       | Shyaka   | F      | west     | Huye     | Rusatira   | Buhimba     |  791411654 | huye_rwanda |
+| 2147483647 | Ricky      | Talent   | M      | south    | Huye     | Kinazi     | Gakoni      |  785008810 | huye_rwanda |
+| 2147483647 | Uwayisenga | Isaac    | M      | south    | Huye     | Save       | Kinkanga    |  783693333 | huye_rwanda |
+| 2147483647 | Izere      | philos   | F      | south    | Huye     | Mukura     | Shyira      |  785019483 | huye_rwanda |
+| 2147483647 | Atete      | olga     | F      | south    | Huye     | Busasamana | Bweramana   |  785087883 | huye_rwanda |
++------------+------------+----------+--------+----------+----------+------------+-------------+------------+-------------+
+9 rows in set (0.00 sec)
+
+mysql> select * from ngoma where  gender ='F' and province='south';
++------------+------------+----------+--------+----------+----------+------------+-----------+------------+-------------+
+| ID         | F_NAME     | L_NAME   | GENDER | PROVINCE | DISTRICT | SECTOR     | CELL      | TEL_NUMBER | address     |
++------------+------------+----------+--------+----------+----------+------------+-----------+------------+-------------+
+| 2147483647 | UWERA      | Josianne | F      | south    | Huye     | Ngoma      | Ruhande   |  788889629 | huye_rwanda |
+| 2147483647 | niyonshuti | yemima   | F      | south    | Huye     | Mbazi      | Rango     |  790119066 | huye_rwanda |
+| 2147483647 | niyigena   | Djamilla | F      | south    | Huye     | Simbi      | Gako      |  787406888 | huye_rwanda |
+| 2147483647 | Izere      | philos   | F      | south    | Huye     | Mukura     | Shyira    |  785019483 | huye_rwanda |
+| 2147483647 | Atete      | olga     | F      | south    | Huye     | Busasamana | Bweramana |  785087883 | huye_rwanda |
++------------+------------+----------+--------+----------+----------+------------+-----------+------------+-------------+
+5 rows in set (0.00 sec)
+
+mysql> select * from ngoma;
++------------+------------+----------+--------+----------+----------+------------+-------------+------------+-------------+
+| ID         | F_NAME     | L_NAME   | GENDER | PROVINCE | DISTRICT | SECTOR     | CELL        | TEL_NUMBER | address     |
++------------+------------+----------+--------+----------+----------+------------+-------------+------------+-------------+
+| 2147483647 | UWERA      | Josianne | F      | south    | Huye     | Ngoma      | Ruhande     |  788889629 | huye_rwanda |
+| 2147483647 | ARTHUR     | Darren   | M      | south    | Huye     | Tumba      | Mukinanyana |  798088152 | huye_rwanda |
+| 2147483647 | niyonshuti | yemima   | F      | south    | Huye     | Mbazi      | Rango       |  790119066 | huye_rwanda |
+| 2147483647 | niyigena   | Djamilla | F      | south    | Huye     | Simbi      | Gako        |  787406888 | huye_rwanda |
+| 2147483647 | neza       | Shyaka   | F      | west     | Huye     | Rusatira   | Buhimba     |  791411654 | huye_rwanda |
+| 2147483647 | Ricky      | Talent   | M      | south    | Huye     | Kinazi     | Gakoni      |  785008810 | huye_rwanda |
+| 2147483647 | Uwayisenga | Isaac    | M      | south    | Huye     | Save       | Kinkanga    |  783693333 | huye_rwanda |
+| 2147483647 | Izere      | philos   | F      | south    | Huye     | Mukura     | Shyira      |  785019483 | huye_rwanda |
+| 2147483647 | Kwigira    | germain  | M      | west     | Huye     | Rusatira   | Rugarama    |  788944251 | huye_rwanda |
+| 2147483647 | Atete      | olga     | F      | south    | Huye     | Busasamana | Bweramana   |  785087883 | huye_rwanda |
++------------+------------+----------+--------+----------+----------+------------+-------------+------------+-------------+
+10 rows in set (0.00 sec)
+
+mysql> update ngoma set district='Nyanza' where gender='M';
+Query OK, 4 rows affected (0.00 sec)
+Rows matched: 4  Changed: 4  Warnings: 0
+
+mysql> select * from ngoma;
++------------+------------+----------+--------+----------+----------+------------+-------------+------------+-------------+
+| ID         | F_NAME     | L_NAME   | GENDER | PROVINCE | DISTRICT | SECTOR     | CELL        | TEL_NUMBER | address     |
++------------+------------+----------+--------+----------+----------+------------+-------------+------------+-------------+
+| 2147483647 | UWERA      | Josianne | F      | south    | Huye     | Ngoma      | Ruhande     |  788889629 | huye_rwanda |
+| 2147483647 | ARTHUR     | Darren   | M      | south    | Nyanza   | Tumba      | Mukinanyana |  798088152 | huye_rwanda |
+| 2147483647 | niyonshuti | yemima   | F      | south    | Huye     | Mbazi      | Rango       |  790119066 | huye_rwanda |
+| 2147483647 | niyigena   | Djamilla | F      | south    | Huye     | Simbi      | Gako        |  787406888 | huye_rwanda |
+| 2147483647 | neza       | Shyaka   | F      | west     | Huye     | Rusatira   | Buhimba     |  791411654 | huye_rwanda |
+| 2147483647 | Ricky      | Talent   | M      | south    | Nyanza   | Kinazi     | Gakoni      |  785008810 | huye_rwanda |
+| 2147483647 | Uwayisenga | Isaac    | M      | south    | Nyanza   | Save       | Kinkanga    |  783693333 | huye_rwanda |
+| 2147483647 | Izere      | philos   | F      | south    | Huye     | Mukura     | Shyira      |  785019483 | huye_rwanda |
+| 2147483647 | Kwigira    | germain  | M      | west     | Nyanza   | Rusatira   | Rugarama    |  788944251 | huye_rwanda |
+| 2147483647 | Atete      | olga     | F      | south    | Huye     | Busasamana | Bweramana   |  785087883 | huye_rwanda |
++------------+------------+----------+--------+----------+----------+------------+-------------+------------+-------------+
+10 rows in set (0.00 sec)
+
+mysql> update ngoma set ID=101 where F_NAME='UWERA';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update ngoma set ID=102 where F_NAME='ARTHUR';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update ngoma set ID=103 where F_NAME='niyonshuti';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update ngoma set ID=104 where F_NAME='niyigena';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update ngoma set ID=105 where F_NAME='neza';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update ngoma set ID=106 where F_NAME='ricky';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update ngoma set ID=107 where F_NAME='uwayisenga';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update ngoma set ID=108 where F_NAME='izere';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update ngoma set ID=109 where F_NAME='kwigira';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update ngoma set ID=110 where F_NAME='atete';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from ngoma;
++------+------------+----------+--------+----------+----------+------------+-------------+------------+-------------+
+| ID   | F_NAME     | L_NAME   | GENDER | PROVINCE | DISTRICT | SECTOR     | CELL        | TEL_NUMBER | address     |
++------+------------+----------+--------+----------+----------+------------+-------------+------------+-------------+
+|  101 | UWERA      | Josianne | F      | south    | Huye     | Ngoma      | Ruhande     |  788889629 | huye_rwanda |
+|  102 | ARTHUR     | Darren   | M      | south    | Nyanza   | Tumba      | Mukinanyana |  798088152 | huye_rwanda |
+|  103 | niyonshuti | yemima   | F      | south    | Huye     | Mbazi      | Rango       |  790119066 | huye_rwanda |
+|  104 | niyigena   | Djamilla | F      | south    | Huye     | Simbi      | Gako        |  787406888 | huye_rwanda |
+|  105 | neza       | Shyaka   | F      | west     | Huye     | Rusatira   | Buhimba     |  791411654 | huye_rwanda |
+|  106 | Ricky      | Talent   | M      | south    | Nyanza   | Kinazi     | Gakoni      |  785008810 | huye_rwanda |
+|  107 | Uwayisenga | Isaac    | M      | south    | Nyanza   | Save       | Kinkanga    |  783693333 | huye_rwanda |
+|  108 | Izere      | philos   | F      | south    | Huye     | Mukura     | Shyira      |  785019483 | huye_rwanda |
+|  109 | Kwigira    | germain  | M      | west     | Nyanza   | Rusatira   | Rugarama    |  788944251 | huye_rwanda |
+|  110 | Atete      | olga     | F      | south    | Huye     | Busasamana | Bweramana   |  785087883 | huye_rwanda |
++------+------------+----------+--------+----------+----------+------------+-------------+------------+-------------+
+10 rows in set (0.00 sec)
+
+mysql> update ngoma set address='nyanza_rwanda' where gender='M';
+Query OK, 4 rows affected (0.00 sec)
+Rows matched: 4  Changed: 4  Warnings: 0
+
+mysql> select * from ngoma;
++------+------------+----------+--------+----------+----------+------------+-------------+------------+---------------+
+| ID   | F_NAME     | L_NAME   | GENDER | PROVINCE | DISTRICT | SECTOR     | CELL        | TEL_NUMBER | address       |
++------+------------+----------+--------+----------+----------+------------+-------------+------------+---------------+
+|  101 | UWERA      | Josianne | F      | south    | Huye     | Ngoma      | Ruhande     |  788889629 | huye_rwanda   |
+|  102 | ARTHUR     | Darren   | M      | south    | Nyanza   | Tumba      | Mukinanyana |  798088152 | nyanza_rwanda |
+|  103 | niyonshuti | yemima   | F      | south    | Huye     | Mbazi      | Rango       |  790119066 | huye_rwanda   |
+|  104 | niyigena   | Djamilla | F      | south    | Huye     | Simbi      | Gako        |  787406888 | huye_rwanda   |
+|  105 | neza       | Shyaka   | F      | west     | Huye     | Rusatira   | Buhimba     |  791411654 | huye_rwanda   |
+|  106 | Ricky      | Talent   | M      | south    | Nyanza   | Kinazi     | Gakoni      |  785008810 | nyanza_rwanda |
+|  107 | Uwayisenga | Isaac    | M      | south    | Nyanza   | Save       | Kinkanga    |  783693333 | nyanza_rwanda |
+|  108 | Izere      | philos   | F      | south    | Huye     | Mukura     | Shyira      |  785019483 | huye_rwanda   |
+|  109 | Kwigira    | germain  | M      | west     | Nyanza   | Rusatira   | Rugarama    |  788944251 | nyanza_rwanda |
+|  110 | Atete      | olga     | F      | south    | Huye     | Busasamana | Bweramana   |  785087883 | huye_rwanda   |
++------+------------+----------+--------+----------+----------+------------+-------------+------------+---------------+
+10 rows in set (0.00 sec)
+
+mysql> select f_name,l_name,gender,district from ngoma;
++------------+----------+--------+----------+
+| f_name     | l_name   | gender | district |
++------------+----------+--------+----------+
+| UWERA      | Josianne | F      | Huye     |
+| ARTHUR     | Darren   | M      | Nyanza   |
+| niyonshuti | yemima   | F      | Huye     |
+| niyigena   | Djamilla | F      | Huye     |
+| neza       | Shyaka   | F      | Huye     |
+| Ricky      | Talent   | M      | Nyanza   |
+| Uwayisenga | Isaac    | M      | Nyanza   |
+| Izere      | philos   | F      | Huye     |
+| Kwigira    | germain  | M      | Nyanza   |
+| Atete      | olga     | F      | Huye     |
++------------+----------+--------+----------+
+10 rows in set (0.00 sec)
+
+mysql> select * from ngoma;
++------+------------+----------+--------+----------+----------+------------+-------------+------------+---------------+
+| ID   | F_NAME     | L_NAME   | GENDER | PROVINCE | DISTRICT | SECTOR     | CELL        | TEL_NUMBER | address       |
++------+------------+----------+--------+----------+----------+------------+-------------+------------+---------------+
+|  101 | UWERA      | Josianne | F      | south    | Huye     | Ngoma      | Ruhande     |  788889629 | huye_rwanda   |
+|  102 | ARTHUR     | Darren   | M      | south    | Nyanza   | Tumba      | Mukinanyana |  798088152 | nyanza_rwanda |
+|  103 | niyonshuti | yemima   | F      | south    | Huye     | Mbazi      | Rango       |  790119066 | huye_rwanda   |
+|  104 | niyigena   | Djamilla | F      | south    | Huye     | Simbi      | Gako        |  787406888 | huye_rwanda   |
+|  105 | neza       | Shyaka   | F      | west     | Huye     | Rusatira   | Buhimba     |  791411654 | huye_rwanda   |
+|  106 | Ricky      | Talent   | M      | south    | Nyanza   | Kinazi     | Gakoni      |  785008810 | nyanza_rwanda |
+|  107 | Uwayisenga | Isaac    | M      | south    | Nyanza   | Save       | Kinkanga    |  783693333 | nyanza_rwanda |
+|  108 | Izere      | philos   | F      | south    | Huye     | Mukura     | Shyira      |  785019483 | huye_rwanda   |
+|  109 | Kwigira    | germain  | M      | west     | Nyanza   | Rusatira   | Rugarama    |  788944251 | nyanza_rwanda |
+|  110 | Atete      | olga     | F      | south    | Huye     | Busasamana | Bweramana   |  785087883 | huye_rwanda   |
++------+------------+----------+--------+----------+----------+------------+-------------+------------+---------------+
+10 rows in set (0.00 sec)
+
+mysql>
